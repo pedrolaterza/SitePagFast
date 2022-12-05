@@ -1,0 +1,255 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.brand {
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color:#405cf5; }
+  
+.site-header {
+    position: relative;
+
+ }
+
+  
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+    @media (min-width: 660px) {
+      .site-header__wrapper {
+        padding-top: 0;
+        padding-bottom: 0; } }
+  @media (max-width: 659px) {
+    .site-header__end {
+      padding-right: 4rem; } }
+  
+  @media (min-width: 660px) {
+    .nav__wrapper {
+      display: flex; } }
+  
+  @media (max-width: 659px) {
+    .nav__wrapper {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      z-index: -1;
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+      .nav__wrapper.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0); } }
+
+.nav__wrapper{
+    margin-left: 10px;
+}
+  
+  .nav__item a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    list-style-type: none;
+    display: block;
+    margin: 1.5rem 1.5rem ;
+    color: black;
+}
+
+  .nav__item a:hover{
+    color: #405cf5;
+}
+
+  .nav__item a:active{
+    color: #405cf5;
+}
+
+
+.nav__wrapper{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+  
+  .nav__toggle {
+    display: none; }
+    @media (max-width: 659px) {
+      .nav__toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem; } 
+      }
+
+.login{
+
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 22px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  display: flex;
+  align-items: row;
+  align-items: center;
+}
+
+.login:hover{
+    transition: all 3s ease-in;
+    box-shadow: rgba(64, 92, 245, 0.4) -5px 5px, rgba(64, 92, 245, 0.3) -10px 10px, rgba(64, 92, 245, 0.2) -15px 15px, rgba(64, 92, 245, 0.1) -20px 20px, rgba(64, 92, 245, 0.05) -25px 25px;
+}
+
+.login:disabled {
+  cursor: default;
+}
+
+.login:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.login p{
+    color: white;
+    padding: 5px 0;
+}
+
+.loginLink{
+  display: flex;
+  align-items: row;
+  color: white;
+}
+
+.login img{
+    max-width: 30px;
+    margin-right: 8px;
+    width: auto;
+}
+
+
+/* NOVIDADES */ 
+
+
+
+.boxblue {
+    height: 400px;
+    background-color: #0066ff;;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    margin-top: 20px;
+}
+
+.textbox {
+    font-family: 'Archivo', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    padding: 80px;
+    font-weight: lighter;
+
+}
+
+.textbox span {
+    font-weight: bold;
+
+
+}
+
+.container {
+    margin-top: 220px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    position: fixed;
+    
+}
+
+.boxmodel {
+    width: 270px;
+    height: 370px;
+    background-color: white;
+    margin: 10px 10px;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    border-radius: 10px;
+
+}
+
+.textinfo {
+   font-family: 'Archivo', sans-serif;
+   font-size: 14px;
+   text-align: center;
+   width: 220px;
+   margin-top: 19px;
+   margin-left: 18px;
+}
+
+.boxtitle{
+    font-family: 'Archivo', sans-serif;
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.iconebox {
+    width: auto;
+    height: auto;
+    max-width: 70px;
+
+}
+
+.iconecelular {
+    width: auto;
+    height: auto;
+    max-width: 55px;
+
+}
+
+a{
+    text-decoration: none;
+}

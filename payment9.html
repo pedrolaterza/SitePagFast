@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/paymentstyle.css" type="text/css">
+    <title>Pagamento | PagFast</title>
+</head>
+<body>
+    <div class="container">
+        <div class="containerPayment">
+            <h1 class="textPayment1">
+                Pagar R$2,00 para <span>PagFast</span> por 1 Água 300ml.
+            </h1>
+            <p class="textInfo2">Após o pagamento ser concluído, você receberá um QR CODE para escanear na máquina de lanches!</p>
+            <div class="buttonanimation" temp="3s">
+                <button id="botao3s">Já Paguei!</button>
+            </div>
+            
+        </div>
+
+        <div class="containerPayment2">
+
+            <h1 class="textPayment">
+                Use o QR Code do Pix para pagar
+            </h1>
+            <p class="textInfo">Abra o app em que vai fazer a transferência, escaneie a imagem ou cole o código do QR Code</p>
+
+            <img src="img/pix2,00.png" alt="Qr Code Pix" class="QRcode">
+
+            <input type="text" id="texto" value="00020126580014BR.GOV.BCB.PIX01364441c0df-c6f4-4862-9091-eb08567e6d2352040000530398654042.005802BR5925Pedro Henrique Alves Late6009SAO PAULO61080540900062070503***63046950"> <br>  <br>
+
+            <button id="botao">Copiar código Qr Code</button>
+
+
+            <script type="text/javascript">
+
+            document.getElementById("botao").addEventListener("click", function() {
+            document.getElementById("texto").select();
+            document.execCommand('copy');
+
+            });
+
+            </script>
+
+        </div>
+    </div>
+</body>
+</html>

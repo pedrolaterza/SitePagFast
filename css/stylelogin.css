@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "PPMonumentExtended-Regular";
+    src: url(../fonts/PPMonumentExtended-Regular.otf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 60%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formstext{
+    text-align: center;
+    padding: 40px;
+    margin: 0 0 0 0;
+}
+
+.login-title{
+    font-family: "PPMonumentExtended-Regular";
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 7px 0;
+}
+
+.login-title a{
+    text-decoration: none;
+    color: #0066ff;
+
+}
+
+.form-container{
+    align-items: center;
+    
+}
+
+.criarConta{
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.criarConta a{
+    font-weight: 500;
+    color: #0066ff;
+    text-decoration: none;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    width: 400px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid 0.5px gray;
+}
+
+input:focus{
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid 2.5px #0066ff;
+}
+
+
+
+
+
+.submit{
+    width: 400px;
+    margin: 10px 0;
+    appearance: none;
+    background-color: #0066ff;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.submit:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.submit:hover {
+    background-color: #005fed;
+}
+
+.submit:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.submit:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.submit-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+label{
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
